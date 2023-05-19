@@ -11,16 +11,7 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-/*===== REMOVE MENU MOBILE =====*/
-const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
+/*===== SCROLL TO SECTIONS WITH ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section[id]')
 
 window.addEventListener('scroll', scrollActive)
@@ -45,7 +36,7 @@ function scrollActive(){
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
-    duration: 2000,
+    duration: 1000,
     reset: true
 })
 
