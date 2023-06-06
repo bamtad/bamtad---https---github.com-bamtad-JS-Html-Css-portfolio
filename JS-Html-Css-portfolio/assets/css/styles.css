@@ -7,9 +7,9 @@
 
 /* Colors */
 :root{
-    --first-color: #181d59;
+    --first-color: #212226;
     --white-color: #FAFAFF;
-    --dark-color: #181d59;
+    --dark-color: #2b2c2c;
     --text-color: #bcc0c2;
 }
 
@@ -206,15 +206,16 @@ img{
 .about__img{
     display: flex;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     overflow: hidden;
     flex-shrink: 0;
     padding: 0;
-    object-fit: cover;   
+    object-fit: fill;   
 }
 .about__img img{
     width: 100%;
+
     padding: 0;
     object-fit: cover;
     object-position: center;
