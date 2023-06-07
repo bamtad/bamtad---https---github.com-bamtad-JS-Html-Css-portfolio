@@ -5,7 +5,7 @@
     --font-medium: 500;
 }
 
-/* Colors */
+
 :root{
     --first-color: #212226;
     --white-color: #FAFAFF;
@@ -13,7 +13,7 @@
     --text-color: #74787a;
 }
 
-/* Font and Typography */
+
 :root{
     --body-font: 'Roboto', sans-serif;
     --big-font-size: 100px;
@@ -30,7 +30,7 @@
     }
 }
 
-/* Margins */
+
 :root{
     --mb-1: 8px;
     --mb-2: 16px;
@@ -40,7 +40,7 @@
 
 
 :root{
-    --z-fixed: 100;
+    --z-fixed: 90;
 }
 
 
@@ -70,7 +70,7 @@ img{
     display: block;
 }
 
-/* Class CSS */
+
 .section{
     padding: 48px 0;
 }
@@ -85,7 +85,7 @@ img{
     position: absolute;
     content: "";
     width: 32px;
-    height: 3px;
+    height: o;
     left: 0;
     right: 0;
     margin: auto;
@@ -93,7 +93,7 @@ img{
     background-color: var(--first-color);
 }
 
-/* Layout */
+
 .bd-grid{
     max-width: 1024px;
     display: grid;
@@ -112,7 +112,7 @@ img{
     background-color: var(--first-color);
 }
 
-/* Nav */
+
 .nav{
     height: var(--header-height);
     display: flex;
@@ -152,12 +152,12 @@ img{
 }
 
 
-/*=== Show menu ===*/
+
 .show{
     right: 0;
 }
 
-/*Active menu*/
+
 .active::after{
     position: absolute;
     content: "";
@@ -168,7 +168,6 @@ img{
     background-color: var(--first-color);
 }
 
-/*===== HOME =====*/
 .home{
     position: relative;
     background-color: var(--first-color);
@@ -197,7 +196,7 @@ img{
 }
 
 
-/* ===== ABOUT =====*/
+
 .about__container{
     justify-items: center;
     row-gap: 2rem;
@@ -242,7 +241,8 @@ img{
     color: var(--first-color);
 }
 
-/* ===== SKILLS =====*/
+
+
 .skills__container{
     row-gap: 2rem;
 }
@@ -267,7 +267,7 @@ img{
     border-radius: .5rem;
 }
 
-/* ===== PORTFOLIO =====*/
+
 .portfolio{
     background-color: var(--white-color);
 }
@@ -305,7 +305,7 @@ img{
 
 
 
-/* ===== FOOTER=====*/
+
 .footer{
     background-color: var(--dark-color);
 }
@@ -383,23 +383,20 @@ img{
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
     }
-    .home__img{
-        width: 524px;
-        right: 10%;
-    }
+   
 
     .about__container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 5fr);
         align-items: center;
         text-align: initial;
         padding: 4rem 0;
     }
     .about__img{
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 100%;
     }
     .about__img img{
-        width: 165px;
+        width: 400px;
     }
 
     .skills__container{
@@ -413,13 +410,6 @@ img{
         column-gap: 2rem;
     }
 
-    .contact__container{
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-    .contact__form{
-        width: 380px;
-    }
 
     .footer__container{
         grid-template-columns: repeat(3, 1fr);
